@@ -1,0 +1,154 @@
+body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color:  #cc918c;
+        color: #ffffff;
+}
+
+.photo {
+        width: 100%;
+        height: 100vh;
+        background-image: 
+            linear-gradient(to right, rgba(255, 149, 149, 0.8), rgba(0, 0, 0, 0.75) 50%, rgba(255, 149, 149, 0.8)), 
+            url(photos/bg.jpg);
+        background-size: cover;
+        background-position: center;
+}
+
+.container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+}
+    
+header {
+        text-align: center;
+        margin-bottom: 10px;
+}
+    
+.highlight {
+        color: #f06666;
+        font-weight: bold;
+}
+
+.row {
+    display: flex;
+    height: 88%;
+    align-items: center;
+    justify-content: flex-end; 
+    padding: 0 30px;
+}
+
+.col {
+    flex-basis: 25%;
+    padding: 10px;
+    text-align: right; 
+}
+
+h1{
+        color: #ff93aa;
+        font-size: 50px;
+}
+p{
+        color: #ffb8c9;
+        font-size: 20px;
+        line-height: 30px;
+}
+
+.content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+}
+
+    
+.card img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        transition: transform 0.3s ease;
+        
+}
+
+.card:hover img {
+        transform: scale(1.1);
+} 
+
+.card h3 {
+        margin: 15px 0 10px;
+        color: #222;
+}
+    
+.card p {
+        font-size: 0.9em;
+        line-height: 1.5;
+        color: #555;
+}
+
+.card {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 100%; 
+        max-width: 300px; 
+        text-align: center;
+        padding: 20px;
+        transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        margin: 10px; 
+}
+
+footer{
+        text-align: right;
+        font-family: fantasy;
+        font-size: 1rem;
+        margin-top: -5px;
+}
+
+ @media (min-width: 580px) and (max-width: 800px) {
+        .card {
+            background-color: rgb(227, 19, 119);
+            color: white;
+            width: 90%; 
+        }
+}
+
+@media (min-width: 801px) and (max-width: 1024px) {
+        .card {
+            background-color: rgb(255, 99, 169);
+            color: white;
+            width: 60%;
+        }
+}
+
+@media (min-width: 1025px) and (max-width: 1450px) {
+        .card {
+            background-color: rgb(251, 183, 206);
+            color: white;
+            width: 45%; 
+        }
+}
+
+@media (min-width: 1451px) and (max-width: 1789px) {
+        .card {
+            background-color: rgb(250, 112, 222);
+            color: white;
+            width: 30%; 
+        }
+}
+    
+@media (min-width: 1790px) {
+        .card {
+            background-color: rgb(252, 44, 231);
+            color: white;
+            width: 25%; 
+        }
+}
+    
+.card {
+        width: 90%;
+}
+
+    
